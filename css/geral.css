@@ -1,0 +1,55 @@
+body {
+   background: rgb(26, 26, 26);
+   background: linear-gradient(
+         145deg,
+         rgba(26, 26, 26, 1) 0%,
+         rgba(10, 10, 10, 1) 100%
+      )
+      cover center;
+}
+
+h1,
+h2,
+h3,
+.btn {
+   font-family: "Poppins", sans-serif;
+}
+
+h4,
+p {
+   font-family: "Roboto", sans-serif;
+}
+
+.btn {
+   display: inline-block;
+   padding: 16px 32px;
+   color: var(--c12);
+   background: var(--p1);
+   font-size: 1.125rem;
+   line-height: 1.333;
+   border-radius: 4px;
+   font-weight: 600;
+   text-transform: uppercase;
+}
+
+.subtitulo {
+   font-size: 3rem;
+   line-height: 1.25;
+   font-weight: 600;
+   color: var(--c12);
+   text-align: center;
+   margin-bottom: 32px;
+}
+
+.subtitulo span {
+   color: var(--p1);
+}
+
+.botao-voltar {
+   width: 40px;
+   height: 40px;
+   opacity: 0.5;
+   position: fixed;
+   bottom: 40px;
+   right: 40px;
+}

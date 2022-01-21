@@ -1,0 +1,71 @@
+.portfolio {
+   max-width: 1440px;
+   margin: 0 auto;
+   padding: 120px 20px 0px;
+}
+
+.portfolio .subtitulo {
+   color: var(--c0);
+}
+
+.portfolio-projetos {
+   display: grid;
+   gap: 40px;
+   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+   margin: 32px 0px 60px;
+}
+
+.portfolio-projetos li a {
+   background: var(--c10);
+   display: inline-block;
+   border-radius: 4px;
+   padding: 8px;
+}
+
+.portfolio-projetos li:hover {
+   transform: scale(1.005); 
+   transition: .3s all ease; 
+   }
+
+.portfolio-projetos h4 {
+   color: var(--c0);
+   font-size: 1.125rem;
+   line-height: 1.333;
+   margin: 20px 0px 10px;
+}
+
+.portfolio-projetos p {
+   color: var(--c6);
+   font-size: 0.875rem;
+   line-height: 1.423;
+}
+
+.portfolio-git {
+   text-align: center;
+}
+
+.portfolio-seta {
+   margin: 0 auto;
+   margin-bottom: 40px;
+   animation: anima 1000ms infinite alternate;
+}
+
+.btn-git {
+   display: inline-block;
+   background: transparent;
+   border: 2px solid var(--p1);
+   color: var(--p1);
+}
+
+.btn-git:hover {
+   transform: scale(1.05);
+}
+
+@keyframes anima {
+   from {
+      transform: translateY(10px);
+   }
+   to {
+      transform: translateY(0);
+   }
+}

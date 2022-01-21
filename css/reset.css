@@ -1,0 +1,60 @@
+/*Variáveis*/
+:root {
+    --bgSite: background: linear-gradient(152.6deg, #1A1A1A 0%, #0A0A0A 100%);;
+    --p1: #9B51E0;
+ 
+    --c0: #fff;
+    --c1: #f7f7f7;
+    --c2: #ededed;
+    --c3: #dedede;
+    --c4: #ccc;
+    --c5: #b2b2b2;
+    --c6: #9c9c9c;
+    --c7: #717171;
+    --c8: #595959;
+    --c9: #404040;
+    --c10: #2e2e2e;
+    --c11: #111;
+    --c12: #000;
+
+ }
+ 
+ /*Reset*/
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ html {
+    scroll-behavior: smooth;
+ }
+ h1,
+ h2,
+ h3,
+ h4,
+ h5,
+ h6 {
+    margin: 0;
+ }
+ ul,
+ ol {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+ }
+ a {
+    text-decoration: none;
+ }
+ img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+ }
+ button,
+ input {
+    border: 0;
+ }
+ button:focus,
+ input:focus {
+    border: 0;
+ }
