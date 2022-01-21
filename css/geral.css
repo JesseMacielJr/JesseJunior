@@ -53,3 +53,9 @@ p {
    bottom: 40px;
    right: 40px;
 }
+
+@media (max-width: 1200px) {
+   .botao-voltar {
+      display: none;
+   }
+}
