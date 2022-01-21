@@ -11,7 +11,7 @@
 .portfolio-projetos {
    display: grid;
    gap: 40px;
-   grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+   grid-template-columns: repeat(auto-fit, minmax(200px, auto));
    margin: 32px 0px 60px;
 }
 
@@ -67,5 +67,14 @@
    }
    to {
       transform: translateY(0);
+   }
+}
+
+@media (max-width: 768px) {
+   .portfolio {
+      padding: 80px 20px;
+   }
+   .portfolio-projetos {
+      gap: 20px;
    }
 }

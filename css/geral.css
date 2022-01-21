@@ -59,3 +59,14 @@ p {
       display: none;
    }
 }
+
+@media (max-width: 768px) {
+   .btn {
+      font-size: 1rem;
+      line-height: 1.333;
+   }
+   .subtitulo {
+      font-size: 2.5rem;
+      line-height: 1.2;
+   }
+}

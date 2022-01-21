@@ -70,7 +70,7 @@
    line-height: 1.333;
 }
 
-@media (max-width: 1200px){
+@media (max-width: 1200px) {
    .introducao-perfil {
       flex-direction: column;
       align-items: center;
@@ -85,6 +85,7 @@
    .introducao {
       grid-template-columns: 1fr;
       justify-items: center;
+      padding: 80px 20px;
    }
    .introducao-perfil {
       margin-top: 60px;
@@ -92,5 +93,16 @@
    }
    .perfil-imagem {
       display: none;
+   }
+}
+
+@media (max-width: 768px) {
+   .introducao-info h1 {
+      font-size: 2rem;
+      line-height: 1.5;
+   }
+   .introducao-info-texto {
+      font-size: 1.125rem;
+      line-height: 1.333;
    }
 }
