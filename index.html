@@ -5,6 +5,7 @@
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Portfólio pessoal contendo projetos Front-End. Estudando novas tecnologias.">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
@@ -19,12 +20,12 @@
     <body>
         <header class="header" id="home">
             <div class="header-container">
-                <a href="index.html" class="header-titulo">Portfólio</a>
+                <a href="index.html" class="header-titulo" aria-label="Home">Portfólio</a>
                 <nav>
                     <ul class="header-menu">
-                        <li><a href="index.html">Home</a></li>
-                        <li><a href="#sobre">Sobre</a></li>
-                        <li><a href="#portfolio">Portfólio</a></li>
+                        <li><a href="index.html" aria-label="Home">Home</a></li>
+                        <li><a href="#sobre" aria-label="Sobre">Sobre</a></li>
+                        <li><a href="#portfolio" aria-label="Portfólio">Portfólio</a></li>
                     </ul>
                 </nav>
             </div>
@@ -40,28 +41,30 @@
                     <div class="introducao-info-texto">
                         <p id="typed"></p>
                     </div>
-                    <a href="#portfolio" class="btn">ver portfólio</a>
+                    <a href="#portfolio" class="btn" aria-label="Portfólio">ver portfólio</a>
                 </div>
                 <div class="introducao-perfil">
                     <img src="img/images/perfil.jpg" alt="Foto de Perfil" class="perfil-imagem">
                     <ul class="redes-sociais">
                         <li>
-                            <a href="https://github.com/JesseMacielJr" target="_blank"><img
-                                    src="img/icons/icons8-github.svg" alt="Ícone GitHub">
+                            <a href="https://github.com/JesseMacielJr" target="_blank" rel="noreferrer" rel="noopener"
+                                aria-label="GitHub"><img src="img/icons/icons8-github.svg" alt="Ícone GitHub">
                                 <p>JesseMacielJr</p>
                             </a>
 
                         </li>
                         <li>
-                            <a href="https://www.linkedin.com/in/jesse-junior/" target="_blank"><img
-                                    src="img/icons/icons8-linkedin.svg" alt="Ícone LinkedIn">
+                            <a href="https://www.linkedin.com/in/jesse-junior/" target="_blank" rel="noreferrer"
+                                rel="noopener" aria-label="LinkedIn"><img src="img/icons/icons8-linkedin.svg"
+                                    alt="Ícone LinkedIn">
                                 <p>Jessé Júnior</p>
                             </a>
 
                         </li>
                         <li>
-                            <a href="https://www.instagram.com/jesse.jr/" target="_blank"><img
-                                    src="img/icons/icons8-instagram.svg" alt="Ícone Instagram">
+                            <a href="https://www.instagram.com/jesse.jr/" target="_blank" rel="noreferrer"
+                                rel="noopener" aria-label="Instagram"><img src="img/icons/icons8-instagram.svg"
+                                    alt="Ícone Instagram">
                                 <p>@jesse.jr</p>
                             </a>
 
@@ -113,70 +116,80 @@
             <section class="portfolio" id="portfolio">
                 <h2 class="subtitulo">Portfólio<span>.</span></h2>
                 <ul class="portfolio-projetos">
-                    <li><a href="https://jessemacieljr.github.io/codelandia-blog/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/codelandia-blog/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Codelândia - Blog">
                             <div>
                                 <img src="img/images/desafio01.jpg" alt="Imagem Projeto" class="img-projeto">
                                 <h4>Codelândia - Blog</h4>
                                 <p>Tecnologias: HTML, CSS</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/codelandia-JordanShoes/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/codelandia-JordanShoes/" target="_blank"
+                            rel="noreferrer" rel="noopener" aria-label="Codelândia - JordanShoes">
                             <div>
                                 <img src="img/images/desafio02.jpg" alt="Imagem Projeto">
                                 <h4>Codelândia - JordanShoes</h4>
                                 <p>Tecnologias: HTML, CSS, Javascript</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/codelandia-OnePage/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/codelandia-OnePage/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Codelândia - OnePage">
                             <div>
                                 <img src="img/images/desafio03.jpg" alt="Imagem Projeto">
                                 <h4>Codelândia - OnePage</h4>
                                 <p>Tecnologias: HTML, CSS</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Portfolio/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/Portfolio/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Origamid - Portfólio">
                             <div>
                                 <img src="img/images/projeto04.jpg" alt="Imagem Projeto">
                                 <h4>Origamid - Portfólio</h4>
                                 <p>Tecnologias: HTML, CSS, Javascript, Figma</p>
                             </div>
                         </a></li>
-                        <li><a href="https://jessemacieljr.github.io/Bikcraft/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/Bikcraft/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Origamid - Bikcraft">
                             <div>
                                 <img src="img/images/projeto06.jpg" alt="Imagem Projeto">
                                 <h4>Origamid - Bikcraft</h4>
                                 <p>Tecnologias: HTML, CSS, Javascript, PHP</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/FlexBlog/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/FlexBlog/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Origamid - FlexBlog">
                             <div>
                                 <img src="img/images/projeto05.jpg" alt="Imagem Projeto">
                                 <h4>Origamid - FlexBlog</h4>
                                 <p>Tecnologias: HTML, CSS</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/WildBeast/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/WildBeast/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="Origamid - WildBeast">
                             <div>
                                 <img src="img/images/projeto06.jpg" alt="Imagem Projeto">
                                 <h4>Origamid - WildBeast</h4>
                                 <p>Tecnologias: HTML, CSS</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/PokemonFinder/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/PokemonFinder/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="PokemonFinder">
                             <div>
                                 <img src="img/images/projeto01.jpg" alt="Imagem Projeto">
                                 <h4>PokemonFinder</h4>
                                 <p>Tecnologias: HTML, CSS, Javascript, API</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/CodarMaster/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/CodarMaster/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="odar Master">
                             <div>
                                 <img src="img/images/projeto02.jpg" alt="Imagem Projeto">
                                 <h4>Codar Master</h4>
                                 <p>Tecnologias: HTML, CSS</p>
                             </div>
                         </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Selfcare2.0/" target="_blank">
+                    <li><a href="https://jessemacieljr.github.io/Selfcare2.0/" target="_blank" rel="noreferrer"
+                            rel="noopener" aria-label="SelfCare">
                             <div>
                                 <img src="img/images/projeto03.jpg" alt="Imagem Projeto">
                                 <h4>SelfCare</h4>
@@ -187,14 +200,15 @@
                 <div class="portfolio-git">
                     <p class="subtitulo">Acesse meu GitHub</p>
                     <img src="img/icons/seta-baixo.svg" alt="" class="portfolio-seta">
-                    <a href="https://github.com/JesseMacielJr" target="_blank" class="btn btn-git">visitar github</a>
+                    <a href="https://github.com/JesseMacielJr" target="_blank" rel="noreferrer" rel="noopener"
+                        aria-label="GitHub" class="btn btn-git">visitar github</a>
                 </div>
             </section>
         </main>
         <footer>
             <img src="img/icons/wave.svg" alt="">
         </footer>
-        <a href="#home"><img src="img/icons/voltar.svg" alt="" class="botao-voltar"></a>
+        <a href="#home" aria-label="Home"><img src="img/icons/voltar.svg" alt="" class="botao-voltar"></a>
 
         <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
         <script>
