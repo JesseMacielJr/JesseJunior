@@ -97,6 +97,9 @@
 }
 
 @media (max-width: 768px) {
+   .introducao {
+      padding: 60px 20px;
+   }
    .introducao-info h1 {
       font-size: 2rem;
       line-height: 1.5;
@@ -104,5 +107,14 @@
    .introducao-info-texto {
       font-size: 1.125rem;
       line-height: 1.333;
+   }
+   .redes-sociais {
+      gap: 16px;
+   }
+   .redes-sociais a {
+      gap: 8px;
+   }
+   .redes-sociais p {
+      font-size: 1rem;
    }
 }
