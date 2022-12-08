@@ -1,278 +1,436 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portfólio pessoal contendo projetos Front-End. Estudando novas tecnologias."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preload" href="css/style.css" as="style" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+    <title>Portfólio - Jessé Jr</title>
+  </head>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta name="description" content="Portfólio pessoal contendo projetos Front-End. Estudando novas tecnologias.">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-        <link rel="preload" href="css/style.min.css" as="style">
-        <link rel="stylesheet" href="css/style.min.css">
-        <link rel="icon" href="favicon.svg" type="image/svg+xml">
-        <title>Portfólio - Jessé Jr</title>
-    </head>
+  <body>
+    <header class="header" id="home">
+      <div class="header-container">
+        <a href="index.html" class="header-titulo" aria-label="Home"
+          >Jessé Júnior</a
+        >
+        <nav>
+          <ul class="header-menu">
+            <li><a href="#home" aria-label="Home">Home</a></li>
+            <li><a href="#sobre" aria-label="Sobre">Sobre</a></li>
+            <li><a href="#portfolio" aria-label="Portfólio">Portfólio</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
 
-    <body>
-        <header class="header" id="home">
-            <div class="header-container">
-                <a href="index.html" class="header-titulo" aria-label="Home">Portfólio</a>
-                <nav>
-                    <ul class="header-menu">
-                        <li><a href="#home" aria-label="Home">Home</a></li>
-                        <li><a href="#sobre" aria-label="Sobre">Sobre</a></li>
-                        <li><a href="#portfolio" aria-label="Portfólio">Portfólio</a></li>
-                    </ul>
-                </nav>
+    <main>
+      <section class="introducao">
+        <div class="introducao-info">
+          <h1>Olá, eu sou o Jessé<span>...</span></h1>
+          <div id="typed-strings">
+            <p>Desenvolvedor Front-End.</p>
+          </div>
+          <div class="introducao-info-texto">
+            <p id="typed"></p>
+          </div>
+          <a href="#portfolio" class="btn" aria-label="Portfólio"
+            >ver portfólio</a
+          >
+        </div>
+        <div class="introducao-perfil">
+          <img
+            src="img/images/perfil.jpg"
+            alt="Foto de Perfil"
+            class="perfil-imagem"
+          />
+          <ul class="redes-sociais">
+            <li>
+              <a
+                href="https://github.com/JesseMacielJr"
+                target="_blank"
+                rel="noreferrer"
+                rel="noopener"
+                aria-label="GitHub"
+                ><img src="img/icons/icons8-github.svg" alt="Ícone GitHub" />
+                <p>JesseMacielJr</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/jesse-junior/"
+                target="_blank"
+                rel="noreferrer"
+                rel="noopener"
+                aria-label="LinkedIn"
+                ><img
+                  src="img/icons/icons8-linkedin.svg"
+                  alt="Ícone LinkedIn"
+                />
+                <p>Jessé Júnior</p>
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/jesse.jr/"
+                target="_blank"
+                rel="noreferrer"
+                rel="noopener"
+                aria-label="Instagram"
+                ><img
+                  src="img/icons/icons8-instagram.svg"
+                  alt="Ícone Instagram"
+                />
+                <p>@jesse.jr</p>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="sobre" id="sobre">
+        <div class="sobre-container">
+          <h2 class="subtitulo">Sobre mim<span>.</span></h2>
+          <p class="sobre-descricao">
+            Me chamo Jessé, tenho 22 anos e estou atualmente no 8º período de
+            Engenharia de Computação pela Universidade Federal de Itajubá
+            (UNIFEI). Sou auto-didata no mundo web e sempre aprimorando minhas
+            habilidades.
+          </p>
+
+          <div class="sobre-stacks">
+            <h3>Stacks</h3>
+            <div class="stacks-item">
+              <img src="img/icons/icons8-html-5.svg" alt="Ícone HTML5" />
+              <h4>HTML5</h4>
+              <p>
+                Linguagem de marcação utilizada na construção de páginas web,
+                que são interpretadas pelo navegador.
+              </p>
             </div>
-        </header>
+            <div class="stacks-item">
+              <img src="img/icons/icons8-css3.svg" alt="Ícone CSS3" />
+              <h4>CSS3</h4>
+              <p>
+                Linguagem de estilo usada para descrever a estilização de um
+                documento HTML.
+              </p>
+            </div>
+            <div class="stacks-item">
+              <img
+                src="img/icons/icons8-javascript.svg"
+                alt="Ícone Javascript"
+              />
+              <h4>Javascript</h4>
+              <p>
+                Linguagem de programação multiparadigma. Adiciona
+                funcionalidades às páginas web.
+              </p>
+            </div>
+            <div class="stacks-item">
+              <img src="img/icons/icons8-figma.svg" alt="Ícone Figma" />
+              <h4>Figma</h4>
+              <p>
+                Editor gráfico de vetor e prototipagem de projetos de design.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
-        <main>
-            <section class="introducao">
-                <div class="introducao-info">
-                    <h1>Olá, eu sou o Jessé<span>...</span></h1>
-                    <div id="typed-strings">
-                        <p>Desenvolvedor Front-End.</p>
-                    </div>
-                    <div class="introducao-info-texto">
-                        <p id="typed"></p>
-                    </div>
-                    <a href="#portfolio" class="btn" aria-label="Portfólio">ver portfólio</a>
-                </div>
-                <div class="introducao-perfil">
-                    <img src="img/images/perfil.jpg" alt="Foto de Perfil" class="perfil-imagem">
-                    <ul class="redes-sociais">
-                        <li>
-                            <a href="https://github.com/JesseMacielJr" target="_blank" rel="noreferrer" rel="noopener"
-                                aria-label="GitHub"><img src="img/icons/icons8-github.svg" alt="Ícone GitHub">
-                                <p>JesseMacielJr</p>
-                            </a>
+      <section class="portfolio" id="portfolio">
+        <h2 class="subtitulo">Portfólio<span>.</span></h2>
+        <ul class="portfolio-projetos">
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/05-StudioGhibli/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Ghibli"
+            >
+              <div>
+                <img src="img/images/desafio05.jpg" alt="Imagem Projeto 5" />
+                <h4>Codelândia - Ghibli</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/06-Loki/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Loki"
+            >
+              <div>
+                <img src="img/images/desafio06.jpg" alt="Imagem Projeto 6" />
+                <h4>Codelândia - Loki</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/07-Valorant/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Valorant"
+            >
+              <div>
+                <img src="img/images/desafio07.jpg" alt="Imagem Projeto 7" />
+                <h4>Codelândia - Valorant</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/22-Projetos/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Projetos"
+            >
+              <div>
+                <img
+                  src="img/images/desafio22.jpg"
+                  alt="Imagem Projeto 1"
+                  class="img-projeto"
+                />
+                <h4>Codelândia - Projetos</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/09-Portfolio/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Portfolio"
+            >
+              <div>
+                <img src="img/images/desafio09.jpg" alt="Imagem Projeto 3" />
+                <h4>Codelândia - Portfolio</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/02-JordanShoes/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - JordanShoes"
+            >
+              <div>
+                <img src="img/images/desafio02.jpg" alt="Imagem Projeto 2" />
+                <h4>Codelândia - JordanShoes</h4>
+                <p>Tecnologias: HTML, CSS, Javascript</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Desafios-Codelandia/04-Login/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Codelândia - Login"
+            >
+              <div>
+                <img src="img/images/desafio04.jpg" alt="Imagem Projeto 4" />
+                <h4>Codelândia - Login</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Portfolio/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Origamid - Portfólio"
+            >
+              <div>
+                <img src="img/images/projeto04.jpg" alt="Imagem Projeto" />
+                <h4>Origamid - Portfólio</h4>
+                <p>Tecnologias: HTML, CSS, Javascript, Figma</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Bikcraft-novo/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Origamid - Bikcraft Novo"
+            >
+              <div>
+                <img src="img/images/projeto08.jpg" alt="Imagem Projeto" />
+                <h4>Origamid - Bikcraft (Novo)</h4>
+                <p>Tecnologias: HTML, CSS, Javascript, Figma</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Bikcraft/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Origamid - Bikcraft"
+            >
+              <div>
+                <img src="img/images/projeto07.jpg" alt="Imagem Projeto" />
+                <h4>Origamid - Bikcraft</h4>
+                <p>Tecnologias: HTML, CSS, Javascript, PHP</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/FlexBlog/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Origamid - FlexBlog"
+            >
+              <div>
+                <img src="img/images/projeto05.jpg" alt="Imagem Projeto" />
+                <h4>Origamid - FlexBlog</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/WildBeast/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="Origamid - WildBeast"
+            >
+              <div>
+                <img src="img/images/projeto06.jpg" alt="Imagem Projeto" />
+                <h4>Origamid - WildBeast</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/PokemonFinder/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="PokemonFinder"
+            >
+              <div>
+                <img src="img/images/projeto01.jpg" alt="Imagem Projeto" />
+                <h4>PokemonFinder</h4>
+                <p>Tecnologias: HTML, CSS, Javascript, API</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/CodarMaster/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="odar Master"
+            >
+              <div>
+                <img src="img/images/projeto02.jpg" alt="Imagem Projeto" />
+                <h4>Codar Master</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+          <li>
+            <a
+              href="https://jessemacieljr.github.io/Selfcare2.0/"
+              target="_blank"
+              rel="noreferrer"
+              rel="noopener"
+              aria-label="SelfCare"
+            >
+              <div>
+                <img src="img/images/projeto03.jpg" alt="Imagem Projeto" />
+                <h4>SelfCare</h4>
+                <p>Tecnologias: HTML, CSS</p>
+              </div>
+            </a>
+          </li>
+        </ul>
+        <div class="portfolio-git">
+          <p class="subtitulo">Acesse meu GitHub</p>
+          <a
+            href="https://github.com/JesseMacielJr"
+            target="_blank"
+            rel="noreferrer"
+            rel="noopener"
+            aria-label="GitHub"
+            class="btn btn-git"
+            >visitar github</a
+          >
+        </div>
+      </section>
+    </main>
+    <footer>
+      <img src="img/icons/wave.svg" alt="" />
+    </footer>
+    <a href="#home" aria-label="Home"
+      ><img src="img/icons/voltar.svg" alt="" class="botao-voltar"
+    /></a>
 
-                        </li>
-                        <li>
-                            <a href="https://www.linkedin.com/in/jesse-junior/" target="_blank" rel="noreferrer"
-                                rel="noopener" aria-label="LinkedIn"><img src="img/icons/icons8-linkedin.svg"
-                                    alt="Ícone LinkedIn">
-                                <p>Jessé Júnior</p>
-                            </a>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+      var typed = new Typed('#typed', {
+        stringsElement: '#typed-strings',
+        startDelay: 700,
+        typeSpeed: 30,
+        showCursor: false,
+      });
+    </script>
 
-                        </li>
-                        <li>
-                            <a href="https://www.instagram.com/jesse.jr/" target="_blank" rel="noreferrer"
-                                rel="noopener" aria-label="Instagram"><img src="img/icons/icons8-instagram.svg"
-                                    alt="Ícone Instagram">
-                                <p>@jesse.jr</p>
-                            </a>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      const sr = ScrollReveal({
+        origin: 'bottom',
+        distance: '50px',
+        duration: 2000,
+        reset: false,
+      });
 
-                        </li>
-                    </ul>
-                </div>
-            </section>
-
-            <section class="sobre" id="sobre">
-                <div class="sobre-container">
-                    <h2 class="subtitulo">Sobre mim<span>.</span></h2>
-                    <p class="sobre-descricao">Me chamo Jessé, tenho 21 anos e estou atualmente no 7º período de
-                        Engenharia de Computação pela
-                        Universidade Federal de Itajubá (UNIFEI). Sou auto-didata no mundo web e sempre aprimorando
-                        minhas stacks.</p>
-
-                    <div class="sobre-stacks">
-                        <h3>Stacks</h3>
-                        <div class="stacks-item">
-                            <img src="img/icons/icons8-html-5.svg" alt="Ícone HTML5">
-                            <h4>HTML5</h4>
-                            <p>Tenho conhecimento das tags mais utilizadas, além de prezar pela semântica e
-                                acessibilidade.
-                            </p>
-                        </div>
-                        <div class="stacks-item">
-                            <img src="img/icons/icons8-css3.svg" alt="Ícone CSS3">
-                            <h4>CSS3</h4>
-                            <p>Conheço acerca de seletores, cores, tipografia, flexbox, grid layout e responsividade.
-                            </p>
-                        </div>
-                        <div class="stacks-item">
-                            <img src="img/icons/icons8-javascript.svg" alt="Ícone Javascript">
-                            <h4>Javascript</h4>
-                            <p>Além da lógica de programação básica estou aprendendo sobre o DOM e uso de API.
-                            </p>
-                        </div>
-                        <div class="stacks-item">
-                            <img src="img/icons/icons8-figma.svg" alt="Ícone Figma">
-                            <h4>Figma</h4>
-                            <p>Possuo uma noção básica de design usando Figma, envolvendo tipografia, cores e
-                                espaçamento.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section class="portfolio" id="portfolio">
-                <h2 class="subtitulo">Portfólio<span>.</span></h2>
-                <ul class="portfolio-projetos">
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/05-StudioGhibli/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Ghibli">
-                            <div>
-                                <img src="img/images/desafio05.jpg" alt="Imagem Projeto 5">
-                                <h4>Codelândia - Ghibli</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/06-Loki/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Loki">
-                            <div>
-                                <img src="img/images/desafio06.jpg" alt="Imagem Projeto 6">
-                                <h4>Codelândia - Loki</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/07-Valorant/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Valorant">
-                            <div>
-                                <img src="img/images/desafio07.jpg" alt="Imagem Projeto 7">
-                                <h4>Codelândia - Valorant</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/22-Projetos/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Projetos">
-                            <div>
-                                <img src="img/images/desafio22.jpg" alt="Imagem Projeto 1" class="img-projeto">
-                                <h4>Codelândia - Projetos</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/09-Portfolio/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Portfolio">
-                            <div>
-                                <img src="img/images/desafio09.jpg" alt="Imagem Projeto 3">
-                                <h4>Codelândia - Portfolio</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/02-JordanShoes/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - JordanShoes">
-                            <div>
-                                <img src="img/images/desafio02.jpg" alt="Imagem Projeto 2">
-                                <h4>Codelândia - JordanShoes</h4>
-                                <p>Tecnologias: HTML, CSS, Javascript</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Desafios-Codelandia/04-Login/" target="_blank"
-                            rel="noreferrer" rel="noopener" aria-label="Codelândia - Login">
-                            <div>
-                                <img src="img/images/desafio04.jpg" alt="Imagem Projeto 4">
-                                <h4>Codelândia - Login</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Portfolio/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="Origamid - Portfólio">
-                            <div>
-                                <img src="img/images/projeto04.jpg" alt="Imagem Projeto">
-                                <h4>Origamid - Portfólio</h4>
-                                <p>Tecnologias: HTML, CSS, Javascript, Figma</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Bikcraft-novo/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="Origamid - Bikcraft Novo">
-                            <div>
-                                <img src="img/images/projeto08.jpg" alt="Imagem Projeto">
-                                <h4>Origamid - Bikcraft (Novo)</h4>
-                                <p>Tecnologias: HTML, CSS, Javascript, Figma</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Bikcraft/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="Origamid - Bikcraft">
-                            <div>
-                                <img src="img/images/projeto07.jpg" alt="Imagem Projeto">
-                                <h4>Origamid - Bikcraft</h4>
-                                <p>Tecnologias: HTML, CSS, Javascript, PHP</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/FlexBlog/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="Origamid - FlexBlog">
-                            <div>
-                                <img src="img/images/projeto05.jpg" alt="Imagem Projeto">
-                                <h4>Origamid - FlexBlog</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/WildBeast/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="Origamid - WildBeast">
-                            <div>
-                                <img src="img/images/projeto06.jpg" alt="Imagem Projeto">
-                                <h4>Origamid - WildBeast</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/PokemonFinder/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="PokemonFinder">
-                            <div>
-                                <img src="img/images/projeto01.jpg" alt="Imagem Projeto">
-                                <h4>PokemonFinder</h4>
-                                <p>Tecnologias: HTML, CSS, Javascript, API</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/CodarMaster/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="odar Master">
-                            <div>
-                                <img src="img/images/projeto02.jpg" alt="Imagem Projeto">
-                                <h4>Codar Master</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                    <li><a href="https://jessemacieljr.github.io/Selfcare2.0/" target="_blank" rel="noreferrer"
-                            rel="noopener" aria-label="SelfCare">
-                            <div>
-                                <img src="img/images/projeto03.jpg" alt="Imagem Projeto">
-                                <h4>SelfCare</h4>
-                                <p>Tecnologias: HTML, CSS</p>
-                            </div>
-                        </a></li>
-                </ul>
-                <div class="portfolio-git">
-                    <p class="subtitulo">Acesse meu GitHub</p>
-                    <img src="img/icons/seta-baixo.svg" alt="" class="portfolio-seta">
-                    <a href="https://github.com/JesseMacielJr" target="_blank" rel="noreferrer" rel="noopener"
-                        aria-label="GitHub" class="btn btn-git">visitar github</a>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <img src="img/icons/wave.svg" alt="">
-        </footer>
-        <a href="#home" aria-label="Home"><img src="img/icons/voltar.svg" alt="" class="botao-voltar"></a>
-
-        <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-        <script>
-            var typed = new Typed('#typed', {
-                stringsElement: '#typed-strings',
-                startDelay: 700,
-                typeSpeed: 30,
-                showCursor: false,
-            });
-        </script>
-
-        <script src="https://unpkg.com/scrollreveal"></script>
-        <script>
-            const sr = ScrollReveal({
-                origin: 'bottom',
-                distance: '50px',
-                duration: 2000,
-                reset: false
-            });
-
-            ScrollReveal().reveal('.portfolio', { delay: 250 });
-        </script>
-        <script src="js/main.js"></script>
-    </body>
-
+      ScrollReveal().reveal('.portfolio', { delay: 250 });
+    </script>
+    <script src="js/main.js"></script>
+  </body>
 </html>

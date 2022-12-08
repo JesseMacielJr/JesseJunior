@@ -1,78 +1,77 @@
 body {
-   background: rgb(26, 26, 26);
-   background: linear-gradient(
-         145deg,
-         rgba(26, 26, 26, 1) 0%,
-         rgba(10, 10, 10, 1) 100%
-      )
-      cover center;
+  background: rgb(26, 26, 26);
+  background: linear-gradient(
+      145deg,
+      rgba(26, 26, 26, 1) 0%,
+      rgba(10, 10, 10, 1) 100%
+    )
+    cover center;
 }
 
 h1,
 h2,
 h3,
 .btn {
-   font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 h4,
 p {
-   font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 .btn {
-   display: inline-block;
-   padding: 16px 32px;
-   color: var(--c12);
-   background: var(--p1);
-   font-size: 1.125rem;
-   line-height: 1.333;
-   border-radius: 4px;
-   font-weight: 600;
-   text-transform: uppercase;
+  display: inline-block;
+  padding: 16px 32px;
+  background: var(--p1);
+  font-size: 1.125rem;
+  line-height: 1.333;
+  border-radius: 4px;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 
 .subtitulo {
-   font-size: 3rem;
-   line-height: 1.25;
-   font-weight: 600;
-   color: var(--c12);
-   text-align: center;
-   margin-bottom: 32px;
+  font-size: 3rem;
+  line-height: 1.25;
+  font-weight: 600;
+  color: var(--c12);
+  text-align: center;
+  margin-bottom: 32px;
 }
 
 .subtitulo span {
-   color: var(--p1);
+  color: var(--p1);
 }
 
 .botao-voltar {
-   display: none;
-   width: 40px;
-   height: 40px;
-   opacity: 0.5;
-   position: fixed;
-   bottom: 40px;
-   right: 40px;
-   transition: .2s;
+  display: none;
+  width: 40px;
+  height: 40px;
+  opacity: 0.5;
+  position: fixed;
+  bottom: 40px;
+  right: 40px;
+  transition: 0.2s;
 }
 
 .botao-voltar-ativo {
-   display: block;
+  display: block;
 }
 
 @media (max-width: 1200px) {
-   .botao-voltar {
-      display: none;
-   }
+  .botao-voltar {
+    display: none;
+  }
 }
 
 @media (max-width: 768px) {
-   .btn {
-      font-size: 1rem;
-      line-height: 1.333;
-   }
-   .subtitulo {
-      font-size: 2.5rem;
-      line-height: 1.2;
-   }
+  .btn {
+    font-size: 1rem;
+    line-height: 1.333;
+  }
+  .subtitulo {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
 }
