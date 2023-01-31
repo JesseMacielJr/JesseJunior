@@ -20,15 +20,24 @@ p {
   font-family: 'Roboto', sans-serif;
 }
 
+a {
+  color: var(--c0);
+}
+
 .btn {
   display: inline-block;
   padding: 16px 32px;
   background: var(--p1);
+  color: var(--p7);
   font-size: 1.125rem;
   line-height: 1.333;
   border-radius: 4px;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+.btn:hover {
+  background: var(--p2);
 }
 
 .subtitulo {
@@ -48,7 +57,7 @@ p {
   display: none;
   width: 40px;
   height: 40px;
-  opacity: 0.5;
+  opacity: 0.25;
   position: fixed;
   bottom: 40px;
   right: 40px;

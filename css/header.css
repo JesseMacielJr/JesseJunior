@@ -25,6 +25,7 @@
 .header-menu {
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
   gap: 40px;
   font-size: 1.125rem;
   line-height: 1.33;
@@ -32,10 +33,34 @@
 }
 
 .header-menu a {
-  background-color: var(--c11);
-  color: var(--c0);
   padding: 10px 20px;
   border-radius: 12px;
+}
+
+.header-menu a:hover {
+  background-color: var(--bg2);
+}
+
+.header-menu-git {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  border: 2px solid var(--p3);
+  font-weight: 600;
+  color: var(--p3);
+  border-radius: 5px;
+}
+
+.header-menu-git:hover {
+  border: 2px solid var(--p2);
+  color: var(--p2);
+}
+
+.header-menu-git::before {
+  content: '';
+  width: 32px;
+  height: 32px;
+  background-image: url('../img/icons/icons8-github.svg');
 }
 
 @media (max-width: 1000px) {

@@ -1,7 +1,13 @@
 /*Variáveis*/
 :root {
     --bgSite: background: linear-gradient(152.6deg, #1A1A1A 0%, #0A0A0A 100%);;
-    --p1: #9B51E0;
+    --p1: #c181fd;
+    --p2: #ad65f0;
+    --p3: #9B51E0;
+    --p4: #8b40d1;
+    --p5: #6a21ad;
+    --p6: #590e9e;
+    --p7: #4a038d;
  
     --c0: #fff;
     --c1: #f7f7f7;
@@ -16,6 +22,10 @@
     --c10: #2e2e2e;
     --c11: #111;
     --c12: #000;
+
+    --bg1: #1a1a1a;
+    --bg2: #131313;
+    --bg3: #1d1d1d;
 
  }
  
